@@ -12,6 +12,11 @@ html {
   display: grid;
   gap: 15px;
   grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer"
 }
 
 .container div {
@@ -25,27 +30,27 @@ html {
 
 .header {
   background-color: #006157;
-  grid-area: 1 / span 2;
+  grid-area: header;
 }
 
 .sidebar {
   background-color: #005B94;
-  grid-area: 2 / 1 / 4;
+  grid-area: sidebar;
 }
 
 .nav {
   background-color: #642cde;
-  grid-area: 2 / 2;
+  grid-area: nav;
 }
 
 .article {
   background-color: #7E1DC3;
-  grid-area: 3 / 2;
+  grid-area: article;
 }
 
 .footer {
   background-color: #393f4d;
-  grid-area: 4 / span 2;
+  grid-area: footer;
 }
 
 .article p {
