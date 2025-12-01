@@ -25,6 +25,21 @@
 .header {
   background-color: #393f4d;
   grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+  justify-self: start;
+}
+
+.menu {
+  align-self: center;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .menu ul,
