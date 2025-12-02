@@ -51,6 +51,14 @@
 .sidebar {
   background-color: #C50208;
   grid-area: sidebar;
+  display: grid;
+  gap: 50px;
+}
+
+.photo,
+.side-content { 
+  display: grid;
+  align-content: center;
 }
 
 .sidebar .photo {
