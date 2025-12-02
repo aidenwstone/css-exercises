@@ -7,11 +7,12 @@
   text-align: center;
   display: grid;
   grid-template:
-    "header  header"
-    "sidebar nav"
+    "header  header" min-content
+    "sidebar nav" min-content
     "sidebar article"
-    "footer  footer" / 1fr 4fr;
+    "footer  footer" min-content / 1fr 4fr;
   gap: 4px;
+  height: 100vh;
 }
 
 .container div {
@@ -106,13 +107,13 @@
   font-family: sans-serif;
   color: white;
   text-align: left;
+  grid-auto-rows: 200px;
 }
 
 .article .card {
   background-color: #FFFFFF;
   color: black;
   text-align: center;
-  height: 200px;
 }
 
 .card p {
